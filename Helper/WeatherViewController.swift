@@ -17,7 +17,7 @@ class WeatherVIewController: UIViewController {
     }
     
     private func configure() {
-        
+        view.backgroundColor = .white
     }
     
     private func bind() {

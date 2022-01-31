@@ -8,7 +8,6 @@
 import Foundation
 import UIKit
 
-
 class ProfileViewController: UIViewController {
     
     override func viewDidLoad() {
@@ -18,7 +17,7 @@ class ProfileViewController: UIViewController {
     }
     
     private func configure() {
-        
+        view.backgroundColor = .white
     }
     
     private func bind() {
