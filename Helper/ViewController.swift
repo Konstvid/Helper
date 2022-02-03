@@ -39,9 +39,6 @@ class ViewController: UITabBarController {
         mapNavigationController = UINavigationController(rootViewController: mapVC)
         let profileItem = UITabBarItem(title: "Map", image: UIImage(systemName: "globe"), selectedImage: nil)
         mapNavigationController?.tabBarItem = profileItem
-        
-        
-        
         return mapNavigationController
     }
     
@@ -52,7 +49,6 @@ class ViewController: UITabBarController {
         weatherNavigationController?.tabBarItem = profileItem
         weatherNavigationController?.navigationBar.prefersLargeTitles = true
         weatherNavigationController?.navigationBar.topItem?.title = "Weather"
-        
         return weatherNavigationController
     }
     
@@ -63,7 +59,6 @@ class ViewController: UITabBarController {
         profileNavigationController?.tabBarItem = profileItem
         profileNavigationController?.navigationBar.prefersLargeTitles = true
         profileNavigationController?.navigationBar.topItem?.title = "Profile"
-        
         return profileNavigationController
     }
     
