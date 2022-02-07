@@ -5,9 +5,7 @@
 //  Created by Andrey on 30.01.2022.
 //
 
-import Foundation
 import UIKit
-
 
 class ProfileViewController: UIViewController {
     
@@ -18,7 +16,7 @@ class ProfileViewController: UIViewController {
     }
     
     private func configure() {
-        
+        view.backgroundColor = .white
     }
     
     private func bind() {

@@ -13,6 +13,10 @@
 		557D91A427A6AE5800C27A6A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557D91A327A6AE5800C27A6A /* ProfileViewController.swift */; };
 		557D91A627A6B1F400C27A6A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557D91A527A6B1F400C27A6A /* MapViewController.swift */; };
 		557D91A927A7C39F00C27A6A /* abosanova.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 557D91A827A7C39F00C27A6A /* abosanova.ttf */; };
+		557D91AB27A84E4C00C27A6A /* NewsAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557D91AA27A84E4C00C27A6A /* NewsAssembly.swift */; };
+		557D91AD27A85CBF00C27A6A /* WeatherAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557D91AC27A85CBF00C27A6A /* WeatherAssembly.swift */; };
+		557D91D327A92A2800C27A6A /* MapAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557D91D227A92A2800C27A6A /* MapAssembly.swift */; };
+		557D91D527A957FB00C27A6A /* ProfileAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557D91D427A957FB00C27A6A /* ProfileAssembly.swift */; };
 		559AA5172790850200967DA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559AA5162790850200967DA5 /* AppDelegate.swift */; };
 		559AA5192790850200967DA5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559AA5182790850200967DA5 /* SceneDelegate.swift */; };
 		559AA51B2790850200967DA5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559AA51A2790850200967DA5 /* ViewController.swift */; };
@@ -27,6 +31,10 @@
 		557D91A327A6AE5800C27A6A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		557D91A527A6B1F400C27A6A /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		557D91A827A7C39F00C27A6A /* abosanova.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = abosanova.ttf; sourceTree = "<group>"; };
+		557D91AA27A84E4C00C27A6A /* NewsAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsAssembly.swift; sourceTree = "<group>"; };
+		557D91AC27A85CBF00C27A6A /* WeatherAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAssembly.swift; sourceTree = "<group>"; };
+		557D91D227A92A2800C27A6A /* MapAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAssembly.swift; sourceTree = "<group>"; };
+		557D91D427A957FB00C27A6A /* ProfileAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileAssembly.swift; sourceTree = "<group>"; };
 		559AA5132790850200967DA5 /* Helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Helper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		559AA5162790850200967DA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		559AA5182790850200967DA5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				557D919B27A6A8BF00C27A6A /* NewsViewController.swift */,
+				557D91AA27A84E4C00C27A6A /* NewsAssembly.swift */,
 			);
 			path = News;
 			sourceTree = "<group>";
@@ -61,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				557D919F27A6ACC000C27A6A /* WeatherViewController.swift */,
+				557D91AC27A85CBF00C27A6A /* WeatherAssembly.swift */,
 			);
 			name = Weather;
 			sourceTree = "<group>";
@@ -69,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				557D91A527A6B1F400C27A6A /* MapViewController.swift */,
+				557D91D227A92A2800C27A6A /* MapAssembly.swift */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -77,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				557D91A327A6AE5800C27A6A /* ProfileViewController.swift */,
+				557D91D427A957FB00C27A6A /* ProfileAssembly.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -204,10 +216,14 @@
 			files = (
 				559AA51B2790850200967DA5 /* ViewController.swift in Sources */,
 				557D91A027A6ACC000C27A6A /* WeatherViewController.swift in Sources */,
+				557D91D327A92A2800C27A6A /* MapAssembly.swift in Sources */,
+				557D91AD27A85CBF00C27A6A /* WeatherAssembly.swift in Sources */,
+				557D91AB27A84E4C00C27A6A /* NewsAssembly.swift in Sources */,
 				559AA5172790850200967DA5 /* AppDelegate.swift in Sources */,
 				557D91A427A6AE5800C27A6A /* ProfileViewController.swift in Sources */,
 				559AA5192790850200967DA5 /* SceneDelegate.swift in Sources */,
 				557D919C27A6A8BF00C27A6A /* NewsViewController.swift in Sources */,
+				557D91D527A957FB00C27A6A /* ProfileAssembly.swift in Sources */,
 				557D91A627A6B1F400C27A6A /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
