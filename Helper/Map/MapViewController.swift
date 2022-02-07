@@ -41,7 +41,7 @@ class MapViewController: UIViewController {
             plusButton.backgroundColor = .white
             plusButton.setTitleColor(.black, for: .normal)
             plusButton.snp.makeConstraints {
-                $0.top.equalTo(80)
+                $0.bottom.equalTo(-100)
                 $0.trailing.equalTo(-20)
             }
             
