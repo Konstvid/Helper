@@ -29,42 +29,41 @@ class MapViewController: UIViewController {
 
     }
     
+    // Action Button
+//    private func actionButton() {
+//        plusButton.addTarget(self, action: , for: )
+//        minusButton.addTarget(self, action: , for: )
+//        locationButton.addTarget(self, action: , for: )
+//    }
+    
     private func configure() {
         view.addSubview(mapView)
-        view.backgroundColor = .white
         mapView.snp.makeConstraints {
         $0.edges.equalToSuperview()
             
         view.addSubview(plusButton)
-            plusButton.setTitle("+", for: .normal)
-            plusButton.layer.cornerRadius = 14
-            plusButton.backgroundColor = .white
-            plusButton.setTitleColor(.black, for: .normal)
+            plusButton.setImage(UIImage.init(named: "plusButton"), for: .normal)
             plusButton.snp.makeConstraints {
-                $0.bottom.equalTo(-100)
+                $0.size.equalTo(44)
+                $0.bottom.equalTo(-280)
                 $0.trailing.equalTo(-20)
             }
             
         view.addSubview(minusButton)
-            minusButton.setTitle("-", for: .normal)
-            minusButton.layer.cornerRadius = 14
-            minusButton.backgroundColor = .white
-            minusButton.setTitleColor(.black, for: .normal)
+            minusButton.setImage(UIImage.init(named: "minusButton"), for: .normal)
             minusButton.snp.makeConstraints {
-                $0.top.equalTo(plusButton.snp.bottom).offset(20)
+                $0.size.equalTo(44)
+                $0.bottom.equalTo(plusButton.snp.bottom).offset(60)
                 $0.trailing.equalTo(-20)
             }
             
         view.addSubview(locationButton)
-            locationButton.setTitle("✓", for: .normal)
-            locationButton.layer.cornerRadius = 14
-            locationButton.setTitleColor(.black, for: .normal)
-            locationButton.backgroundColor = .white
+            locationButton.setImage(UIImage.init(named: "locationButton"), for: .normal)
             locationButton.snp.makeConstraints {
-                $0.top.equalTo(minusButton.snp.bottom).offset(20)
+                $0.size.equalTo(44)
+                $0.bottom.equalTo(minusButton.snp.top).offset(100)
                 $0.trailing.equalTo(-20)
             }
-        
     }
     }
     
@@ -86,8 +85,8 @@ extension MapViewController: CLLocationManagerDelegate {
                                             longitude: location.coordinate.longitude)
         let pin = MKPointAnnotation()
         pin.coordinate = center
-        pin.title = "Вы тута"
-        pin.subtitle = "Двигаемся:)"
+        pin.title = Constants.title
+        pin.subtitle = Constants.subtitle
         mapView.addAnnotation(pin)
         let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
         mapView.setRegion(region, animated: true)

@@ -12,4 +12,6 @@ struct Constants {
     static let map = "Map"
     static let weather = "Weather"
     static let profile = "Profile"
+    static let title = "Вы тута"
+    static let subtitle = "Двигаемся:)"
 }
