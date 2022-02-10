@@ -26,18 +26,18 @@ class ViewController: UITabBarController {
     private func makeNewsViewController() -> UINavigationController? {
         let profileVC = NewsAssembly().build()
         newsNavigationController = UINavigationController(rootViewController: profileVC)
-        let profileItem = UITabBarItem(title: "News", image: UIImage(systemName: "person.crop.circle"), selectedImage: nil)
+
+        let profileItem = UITabBarItem(title: Constants.news, image: UIImage(systemName: "person.crop.circle"), selectedImage: nil)
         newsNavigationController?.tabBarItem = profileItem
         newsNavigationController?.navigationBar.prefersLargeTitles = true
-        newsNavigationController?.navigationBar.topItem?.title = "News"
-       
+        newsNavigationController?.navigationBar.topItem?.title = Constants.news
         return newsNavigationController
     }
     
     private func makeMapViewController() -> UINavigationController? {
         let mapVC = MapAssembly().build()
         mapNavigationController = UINavigationController(rootViewController: mapVC)
-        let profileItem = UITabBarItem(title: "Map", image: UIImage(systemName: "globe"), selectedImage: nil)
+        let profileItem = UITabBarItem(title: Constants.map, image: UIImage(systemName: "globe"), selectedImage: nil)
         mapNavigationController?.tabBarItem = profileItem
         return mapNavigationController
     }
@@ -45,7 +45,7 @@ class ViewController: UITabBarController {
     private func makeWeatherViewController() -> UINavigationController? {
         let weatherVC = WeatherAssembly().build()
         weatherNavigationController = UINavigationController(rootViewController: weatherVC)
-        let profileItem = UITabBarItem(title: "Weather", image: UIImage(systemName: "sun.max"), selectedImage: nil)
+        let profileItem = UITabBarItem(title: Constants.weather, image: UIImage(systemName: "sun.max"), selectedImage: nil)
         weatherNavigationController?.tabBarItem = profileItem
         weatherNavigationController?.navigationBar.prefersLargeTitles = true
         weatherNavigationController?.navigationBar.topItem?.title = "Weather"
@@ -55,7 +55,7 @@ class ViewController: UITabBarController {
     private func makeProfileViewController() -> UINavigationController? {
         let profileVC = ProfileAssembly().build()
         profileNavigationController = UINavigationController(rootViewController: profileVC)
-        let profileItem = UITabBarItem(title: "Profile", image: UIImage(systemName: "person"), selectedImage: nil)
+        let profileItem = UITabBarItem(title: Constants.profile, image: UIImage(systemName: "person"), selectedImage: nil)
         profileNavigationController?.tabBarItem = profileItem
         profileNavigationController?.navigationBar.prefersLargeTitles = true
         profileNavigationController?.navigationBar.topItem?.title = "Profile"
