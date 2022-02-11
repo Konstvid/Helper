@@ -7,6 +7,8 @@
 
 import Foundation
 
+typealias VoidCompletion = (() -> Void)
+
 struct Constants {
     static let news = "News"
     static let map = "Map"
