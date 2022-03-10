@@ -16,10 +16,11 @@ class MapContainerView: UIView {
     private let plusButton = UIButton()
     private let minusButton = UIButton()
     private let locationButton = UIButton()
- 
+    
     init() {
         super.init(frame: .zero)
         configureUI()
+        configureLayout()
     }
     
     required init?(coder: NSCoder) {
@@ -27,32 +28,39 @@ class MapContainerView: UIView {
     }
     
     private func configureUI() {
-        addSubview(mapView)
+        
+        plusButton.setImage(UIImage.init(named: "plusButton"), for: .normal)
+        plusButton.addTarget(self, action: #selector(plusButtonAction), for: .touchUpInside)
+        
+        minusButton.setImage(UIImage.init(named: "minusButton"), for: .normal)
+        minusButton.addTarget(self, action: #selector(minusButtonAction), for: .touchUpInside)
+        
+        locationButton.setImage(UIImage.init(named: "locationButton"), for: .normal)
+        locationButton.addTarget(
+            self, action: #selector(locationButtonAction), for: .touchUpInside
+        )
+
+        addSubViews([mapView, plusButton, minusButton, locationButton])
+    }
+    
+    private func configureLayout() {
+        
         mapView.snp.makeConstraints {
             $0.edges.equalToSuperview()
         }
         
-        addSubview(plusButton)
-        plusButton.setImage(UIImage.init(named: "plusButton"), for: .normal)
-        plusButton.addTarget(self, action: #selector(plusButtonAction), for: .touchUpInside)
         plusButton.snp.makeConstraints {
             $0.size.equalTo(44)
             $0.bottom.equalTo(-280)
             $0.trailing.equalTo(-20)
         }
         
-        addSubview(minusButton)
-        minusButton.setImage(UIImage.init(named: "minusButton"), for: .normal)
-        minusButton.addTarget(self, action: #selector(minusButtonAction), for: .touchUpInside)
         minusButton.snp.makeConstraints {
             $0.size.equalTo(44)
             $0.bottom.equalTo(plusButton.snp.bottom).offset(60)
             $0.trailing.equalTo(-20)
         }
         
-        addSubview(locationButton)
-        locationButton.setImage(UIImage.init(named: "locationButton"), for: .normal)
-        locationButton.addTarget(self, action: #selector(locationButtonAction), for: .touchUpInside)
         locationButton.snp.makeConstraints {
             $0.size.equalTo(44)
             $0.bottom.equalTo(minusButton.snp.top).offset(100)

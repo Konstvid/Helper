@@ -10,6 +10,8 @@ import UIKit
 
 class WeatherVIewController: UIViewController {
     
+    private let weatherCointainerView = WeatherContainerView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configure()
@@ -17,7 +19,10 @@ class WeatherVIewController: UIViewController {
     }
     
     private func configure() {
-        view.backgroundColor = .white
+        view.addSubview(weatherCointainerView)
+        weatherCointainerView.snp.makeConstraints {
+            $0.edges.equalToSuperview()
+        }
     }
     
     private func bind() {
