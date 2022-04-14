@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		556F99512808862C00D58D90 /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556F99502808862C00D58D90 /* NewsViewModel.swift */; };
+		556F99532808864900D58D90 /* NewsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556F99522808864900D58D90 /* NewsRouter.swift */; };
+		556F99552808865F00D58D90 /* NewsContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556F99542808865F00D58D90 /* NewsContainerView.swift */; };
+		556F99572808866D00D58D90 /* NewsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556F99562808866D00D58D90 /* NewsDataSource.swift */; };
+		556F995928088D3D00D58D90 /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556F995828088D3D00D58D90 /* NewsCell.swift */; };
 		557D91962797280500C27A6A /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 557D91952797280500C27A6A /* SnapKit */; };
 		557D919C27A6A8BF00C27A6A /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557D919B27A6A8BF00C27A6A /* NewsViewController.swift */; };
 		557D91A027A6ACC000C27A6A /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557D919F27A6ACC000C27A6A /* WeatherViewController.swift */; };
@@ -34,6 +39,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		556F99502808862C00D58D90 /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
+		556F99522808864900D58D90 /* NewsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsRouter.swift; sourceTree = "<group>"; };
+		556F99542808865F00D58D90 /* NewsContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsContainerView.swift; sourceTree = "<group>"; };
+		556F99562808866D00D58D90 /* NewsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDataSource.swift; sourceTree = "<group>"; };
+		556F995828088D3D00D58D90 /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
 		557D919B27A6A8BF00C27A6A /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		557D919F27A6ACC000C27A6A /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		557D91A327A6AE5800C27A6A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -76,8 +86,13 @@
 		557D919727A6A83C00C27A6A /* News */ = {
 			isa = PBXGroup;
 			children = (
-				557D919B27A6A8BF00C27A6A /* NewsViewController.swift */,
 				557D91AA27A84E4C00C27A6A /* NewsAssembly.swift */,
+				557D919B27A6A8BF00C27A6A /* NewsViewController.swift */,
+				556F99502808862C00D58D90 /* NewsViewModel.swift */,
+				556F99522808864900D58D90 /* NewsRouter.swift */,
+				556F99542808865F00D58D90 /* NewsContainerView.swift */,
+				556F99562808866D00D58D90 /* NewsDataSource.swift */,
+				556F995828088D3D00D58D90 /* NewsCell.swift */,
 			);
 			path = News;
 			sourceTree = "<group>";
@@ -245,6 +260,8 @@
 				557D91AD27A85CBF00C27A6A /* WeatherAssembly.swift in Sources */,
 				55F9D49727DA5C6C00A70811 /* WeatherRouter.swift in Sources */,
 				55C119A827D5FCA600AC4C53 /* MapContainerView.swift in Sources */,
+				556F99532808864900D58D90 /* NewsRouter.swift in Sources */,
+				556F99512808862C00D58D90 /* NewsViewModel.swift in Sources */,
 				557D91AB27A84E4C00C27A6A /* NewsAssembly.swift in Sources */,
 				559AA5172790850200967DA5 /* AppDelegate.swift in Sources */,
 				55F9D49527DA578A00A70811 /* UIView+Extension.swift in Sources */,
@@ -256,7 +273,10 @@
 				55F9D49927DA5CCC00A70811 /* WeatherViewModel.swift in Sources */,
 				55C119AA27D6093D00AC4C53 /* MapRouter.swift in Sources */,
 				557D91A627A6B1F400C27A6A /* MapViewController.swift in Sources */,
+				556F99572808866D00D58D90 /* NewsDataSource.swift in Sources */,
 				557D91D727B1843000C27A6A /* Constants.swift in Sources */,
+				556F995928088D3D00D58D90 /* NewsCell.swift in Sources */,
+				556F99552808865F00D58D90 /* NewsContainerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

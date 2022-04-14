@@ -10,7 +10,9 @@ import Foundation
 class NewsAssembly {
     
     func build() -> NewsViewController {
-        let vc = NewsViewController()
+        let router = NewsRouter()
+        let viewModel = NewsViewModel(router: router)
+        let vc = NewsViewController(viewModel: viewModel)
         return vc
     }
 }

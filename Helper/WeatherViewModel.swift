@@ -7,6 +7,7 @@
 
 import Foundation
 
+
 class WeatherViewModel {
     
     private let weatherRouter: WeatherRouter

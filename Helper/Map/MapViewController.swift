@@ -10,7 +10,7 @@ import MapKit
 
 class MapViewController: UIViewController {
     
-    var mapViewModel: MapViewModel?
+    var mapViewModel: MapViewModalProtocol?
     private let mapContainerView = MapContainerView()
     private var locationManager: CLLocationManager?
 
