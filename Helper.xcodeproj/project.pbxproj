@@ -12,6 +12,11 @@
 		556F99552808865F00D58D90 /* NewsContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556F99542808865F00D58D90 /* NewsContainerView.swift */; };
 		556F99572808866D00D58D90 /* NewsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556F99562808866D00D58D90 /* NewsDataSource.swift */; };
 		556F995928088D3D00D58D90 /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556F995828088D3D00D58D90 /* NewsCell.swift */; };
+		556F9988280DE3B900D58D90 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556F9987280DE3B900D58D90 /* NetworkService.swift */; };
+		556F998A280DE47F00D58D90 /* UserDefaultService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556F9989280DE47F00D58D90 /* UserDefaultService.swift */; };
+		556F998C280DE52F00D58D90 /* ServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556F998B280DE52F00D58D90 /* ServiceFactory.swift */; };
+		556F998E280DE6A100D58D90 /* BaseAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556F998D280DE6A100D58D90 /* BaseAssembly.swift */; };
+		556F9A0D2811D62E00D58D90 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556F9A0C2811D62E00D58D90 /* News.swift */; };
 		557D91962797280500C27A6A /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 557D91952797280500C27A6A /* SnapKit */; };
 		557D919C27A6A8BF00C27A6A /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557D919B27A6A8BF00C27A6A /* NewsViewController.swift */; };
 		557D91A027A6ACC000C27A6A /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557D919F27A6ACC000C27A6A /* WeatherViewController.swift */; };
@@ -44,6 +49,11 @@
 		556F99542808865F00D58D90 /* NewsContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsContainerView.swift; sourceTree = "<group>"; };
 		556F99562808866D00D58D90 /* NewsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDataSource.swift; sourceTree = "<group>"; };
 		556F995828088D3D00D58D90 /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
+		556F9987280DE3B900D58D90 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		556F9989280DE47F00D58D90 /* UserDefaultService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultService.swift; sourceTree = "<group>"; };
+		556F998B280DE52F00D58D90 /* ServiceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceFactory.swift; sourceTree = "<group>"; };
+		556F998D280DE6A100D58D90 /* BaseAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAssembly.swift; sourceTree = "<group>"; };
+		556F9A0C2811D62E00D58D90 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 		557D919B27A6A8BF00C27A6A /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		557D919F27A6ACC000C27A6A /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		557D91A327A6AE5800C27A6A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +93,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		556F9986280DE3A400D58D90 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				556F9987280DE3B900D58D90 /* NetworkService.swift */,
+				556F9989280DE47F00D58D90 /* UserDefaultService.swift */,
+				556F998B280DE52F00D58D90 /* ServiceFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
 		557D919727A6A83C00C27A6A /* News */ = {
 			isa = PBXGroup;
 			children = (
@@ -157,11 +177,14 @@
 		559AA5152790850200967DA5 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				556F9986280DE3A400D58D90 /* Factory */,
 				557D919727A6A83C00C27A6A /* News */,
 				557D919927A6A85A00C27A6A /* Map */,
 				557D919827A6A84D00C27A6A /* Weather */,
 				557D919A27A6A86300C27A6A /* Profile */,
 				559AA5162790850200967DA5 /* AppDelegate.swift */,
+				556F9A0C2811D62E00D58D90 /* News.swift */,
+				556F998D280DE6A100D58D90 /* BaseAssembly.swift */,
 				559AA5182790850200967DA5 /* SceneDelegate.swift */,
 				559AA51A2790850200967DA5 /* ViewController.swift */,
 				55F9D49427DA578900A70811 /* UIView+Extension.swift */,
@@ -253,27 +276,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				556F9A0D2811D62E00D58D90 /* News.swift in Sources */,
 				559AA51B2790850200967DA5 /* ViewController.swift in Sources */,
 				557D91A027A6ACC000C27A6A /* WeatherViewController.swift in Sources */,
 				557D91D327A92A2800C27A6A /* MapAssembly.swift in Sources */,
 				55C119AE27D6994C00AC4C53 /* WeatherContainerView.swift in Sources */,
 				557D91AD27A85CBF00C27A6A /* WeatherAssembly.swift in Sources */,
+				556F9988280DE3B900D58D90 /* NetworkService.swift in Sources */,
 				55F9D49727DA5C6C00A70811 /* WeatherRouter.swift in Sources */,
 				55C119A827D5FCA600AC4C53 /* MapContainerView.swift in Sources */,
 				556F99532808864900D58D90 /* NewsRouter.swift in Sources */,
 				556F99512808862C00D58D90 /* NewsViewModel.swift in Sources */,
 				557D91AB27A84E4C00C27A6A /* NewsAssembly.swift in Sources */,
 				559AA5172790850200967DA5 /* AppDelegate.swift in Sources */,
+				556F998E280DE6A100D58D90 /* BaseAssembly.swift in Sources */,
 				55F9D49527DA578A00A70811 /* UIView+Extension.swift in Sources */,
 				557D91A427A6AE5800C27A6A /* ProfileViewController.swift in Sources */,
 				559AA5192790850200967DA5 /* SceneDelegate.swift in Sources */,
 				557D919C27A6A8BF00C27A6A /* NewsViewController.swift in Sources */,
 				557D91D527A957FB00C27A6A /* ProfileAssembly.swift in Sources */,
+				556F998C280DE52F00D58D90 /* ServiceFactory.swift in Sources */,
 				55C119AC27D6099300AC4C53 /* MapViewModel.swift in Sources */,
 				55F9D49927DA5CCC00A70811 /* WeatherViewModel.swift in Sources */,
 				55C119AA27D6093D00AC4C53 /* MapRouter.swift in Sources */,
 				557D91A627A6B1F400C27A6A /* MapViewController.swift in Sources */,
 				556F99572808866D00D58D90 /* NewsDataSource.swift in Sources */,
+				556F998A280DE47F00D58D90 /* UserDefaultService.swift in Sources */,
 				557D91D727B1843000C27A6A /* Constants.swift in Sources */,
 				556F995928088D3D00D58D90 /* NewsCell.swift in Sources */,
 				556F99552808865F00D58D90 /* NewsContainerView.swift in Sources */,

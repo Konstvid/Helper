@@ -7,7 +7,7 @@
 
 import Foundation
 
-class MapAssembly {
+class MapAssembly: BaseAssembly {
     
     func build() -> MapViewController {
         let vc = MapViewController()

@@ -21,7 +21,7 @@ class NewsViewController: UIViewController {
         configure()
         bind()
     }
-    
+  
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -37,7 +37,12 @@ class NewsViewController: UIViewController {
     }
     
     private func bind() {
-        
+        viewModel.getNews { [weak self] news in
+            DispatchQueue.main.async {
+                self?.dataSource.news = news
+                self?.newsContainerView.tableView.reloadData()
+            }
+        }
     }
 }
 
