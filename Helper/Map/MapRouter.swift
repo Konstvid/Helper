@@ -7,6 +7,10 @@
 
 import Foundation
 
-class MapRouter {
+protocol MapRouterProtocol {
+    
+}
+
+class MapRouter: MapRouterProtocol {
     
 }

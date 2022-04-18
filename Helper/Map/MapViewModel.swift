@@ -7,11 +7,15 @@
 
 import Foundation
 
-class MapViewModel {
+protocol MapViewModalProtocol {
     
-    private let mapRouter: MapRouter
+}
+
+class MapViewModel: MapViewModalProtocol {
     
-    init(mapRouter: MapRouter) {
+    private let mapRouter: MapRouterProtocol
+    
+    init(mapRouter: MapRouterProtocol) {
         self.mapRouter = mapRouter
     }
 }
