@@ -1,0 +1,31 @@
+{
+    "fields": [
+        {
+            "icon": "City",
+            "title": "City",
+            "arrow": true,
+            "type": "city"
+        },
+        {
+            "icon": "Name",
+            "title": "Name",
+            "arrow": true,
+            "type": "name"
+        },
+        {
+            "icon": "Temperature",
+            "title": "Temperature",
+            "type": "temperature"
+        },
+        {
+            "icon": "Birthdate",
+            "title": "Birthdate",
+            "type": "birthdate"
+        },
+        {
+            "icon": "Notification",
+            "title": "Notification",
+            "type": "notification"
+        }
+    ]
+}

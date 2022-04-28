@@ -9,6 +9,7 @@ import Foundation
 
 protocol NewsViewModelProtocol {
     func getNews(completion: @escaping ([News]) -> ())
+    func showNewsDescriptions(news: News)
 }
 
 class NewsViewModel: NewsViewModelProtocol {
@@ -31,6 +32,8 @@ class NewsViewModel: NewsViewModelProtocol {
             }
         }
     }
+    
+    func showNewsDescriptions(news: News) {
+        router.showNewsDescriptionViewController(news: news)
+    }
 }
-
-

@@ -13,6 +13,7 @@ class NewsAssembly: BaseAssembly {
         let router = NewsRouter()
         let viewModel = NewsViewModel(router: router, network: serviceFactory.network)
         let vc = NewsViewController(viewModel: viewModel)
+        router.moduleController = vc
         return vc
     }
 }

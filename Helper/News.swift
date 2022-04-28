@@ -10,7 +10,6 @@ import Foundation
 struct NewsResponse: Codable {
    
     let data: [News]
-    
 }
 
 struct News: Codable {

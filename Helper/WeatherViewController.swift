@@ -10,12 +10,18 @@ import UIKit
 
 class WeatherVIewController: UIViewController {
     
+    private let viewModel: WeatherViewModelProtocol
     private let weatherCointainerView = WeatherContainerView()
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    init(viewModel: WeatherViewModelProtocol) {
+        self.viewModel = viewModel
+        super.init(nibName: nil, bundle: nil)
         configure()
         bind()
+    }
+  
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
     
     private func configure() {
@@ -29,5 +35,3 @@ class WeatherVIewController: UIViewController {
         
     }
 }
-
-

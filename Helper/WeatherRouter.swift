@@ -7,6 +7,10 @@
 
 import Foundation
 
-class WeatherRouter {
+protocol WeatherRouterProtocol {
+    
+}
+
+class WeatherRouter: WeatherRouterProtocol {
     
 }

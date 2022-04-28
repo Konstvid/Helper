@@ -51,4 +51,9 @@ extension NewsViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 250
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let news = dataSource.news[indexPath.row]
+        viewModel.showNewsDescriptions(news: news)
+    }
 }

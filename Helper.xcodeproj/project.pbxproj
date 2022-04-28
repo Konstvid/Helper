@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		556E21C8282915CA000C28AF /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 556E21C7282915CA000C28AF /* SDWebImage */; };
+		556E21CA28291741000C28AF /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556E21C928291741000C28AF /* String+Extension.swift */; };
+		556E21CC282917A9000C28AF /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556E21CB282917A9000C28AF /* Date+Extension.swift */; };
+		556E21CE2829CD61000C28AF /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556E21CD2829CD61000C28AF /* Weather.swift */; };
+		556E21D0282A5D79000C28AF /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556E21CF282A5D79000C28AF /* ProfileViewModel.swift */; };
+		556E21D2282A5D93000C28AF /* ProfileRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556E21D1282A5D93000C28AF /* ProfileRouter.swift */; };
+		556E21D4282A5DAD000C28AF /* ProfileContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556E21D3282A5DAD000C28AF /* ProfileContainerView.swift */; };
+		556E21D6282A5DBF000C28AF /* ProfileIconCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556E21D5282A5DBF000C28AF /* ProfileIconCell.swift */; };
+		556E21D8282AFC3F000C28AF /* ProfileDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556E21D7282AFC3F000C28AF /* ProfileDataSource.swift */; };
+		556E2201282D7763000C28AF /* ProfileOtherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556E2200282D7763000C28AF /* ProfileOtherCell.swift */; };
 		556F99512808862C00D58D90 /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556F99502808862C00D58D90 /* NewsViewModel.swift */; };
 		556F99532808864900D58D90 /* NewsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556F99522808864900D58D90 /* NewsRouter.swift */; };
 		556F99552808865F00D58D90 /* NewsContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556F99542808865F00D58D90 /* NewsContainerView.swift */; };
@@ -17,6 +27,13 @@
 		556F998C280DE52F00D58D90 /* ServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556F998B280DE52F00D58D90 /* ServiceFactory.swift */; };
 		556F998E280DE6A100D58D90 /* BaseAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556F998D280DE6A100D58D90 /* BaseAssembly.swift */; };
 		556F9A0D2811D62E00D58D90 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556F9A0C2811D62E00D58D90 /* News.swift */; };
+		556F9A85281B078C00D58D90 /* NewsDescriptionsAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556F9A84281B078C00D58D90 /* NewsDescriptionsAssembly.swift */; };
+		556F9A87281B07C900D58D90 /* NewsDescriptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556F9A86281B07C900D58D90 /* NewsDescriptionsViewController.swift */; };
+		556F9A89281B080200D58D90 /* NewsDescriptionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556F9A88281B080200D58D90 /* NewsDescriptionsViewModel.swift */; };
+		556F9A8B281B080C00D58D90 /* NewsDescriptionsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556F9A8A281B080C00D58D90 /* NewsDescriptionsRouter.swift */; };
+		556F9A8D281B083A00D58D90 /* NewsDescriptionsContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556F9A8C281B083A00D58D90 /* NewsDescriptionsContainerView.swift */; };
+		557BE922283409D300B545C8 /* Profile.json in Resources */ = {isa = PBXBuildFile; fileRef = 557BE921283409D300B545C8 /* Profile.json */; };
+		557BE92428340A8900B545C8 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557BE92328340A8900B545C8 /* Profile.swift */; };
 		557D91962797280500C27A6A /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 557D91952797280500C27A6A /* SnapKit */; };
 		557D919C27A6A8BF00C27A6A /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557D919B27A6A8BF00C27A6A /* NewsViewController.swift */; };
 		557D91A027A6ACC000C27A6A /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557D919F27A6ACC000C27A6A /* WeatherViewController.swift */; };
@@ -44,6 +61,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		556E21C928291741000C28AF /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		556E21CB282917A9000C28AF /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		556E21CD2829CD61000C28AF /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		556E21CF282A5D79000C28AF /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		556E21D1282A5D93000C28AF /* ProfileRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRouter.swift; sourceTree = "<group>"; };
+		556E21D3282A5DAD000C28AF /* ProfileContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileContainerView.swift; sourceTree = "<group>"; };
+		556E21D5282A5DBF000C28AF /* ProfileIconCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileIconCell.swift; sourceTree = "<group>"; };
+		556E21D7282AFC3F000C28AF /* ProfileDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDataSource.swift; sourceTree = "<group>"; };
+		556E2200282D7763000C28AF /* ProfileOtherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileOtherCell.swift; sourceTree = "<group>"; };
 		556F99502808862C00D58D90 /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
 		556F99522808864900D58D90 /* NewsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsRouter.swift; sourceTree = "<group>"; };
 		556F99542808865F00D58D90 /* NewsContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsContainerView.swift; sourceTree = "<group>"; };
@@ -54,6 +80,13 @@
 		556F998B280DE52F00D58D90 /* ServiceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceFactory.swift; sourceTree = "<group>"; };
 		556F998D280DE6A100D58D90 /* BaseAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAssembly.swift; sourceTree = "<group>"; };
 		556F9A0C2811D62E00D58D90 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		556F9A84281B078C00D58D90 /* NewsDescriptionsAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDescriptionsAssembly.swift; sourceTree = "<group>"; };
+		556F9A86281B07C900D58D90 /* NewsDescriptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDescriptionsViewController.swift; sourceTree = "<group>"; };
+		556F9A88281B080200D58D90 /* NewsDescriptionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDescriptionsViewModel.swift; sourceTree = "<group>"; };
+		556F9A8A281B080C00D58D90 /* NewsDescriptionsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDescriptionsRouter.swift; sourceTree = "<group>"; };
+		556F9A8C281B083A00D58D90 /* NewsDescriptionsContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDescriptionsContainerView.swift; sourceTree = "<group>"; };
+		557BE921283409D300B545C8 /* Profile.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Profile.json; sourceTree = "<group>"; };
+		557BE92328340A8900B545C8 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		557D919B27A6A8BF00C27A6A /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		557D919F27A6ACC000C27A6A /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		557D91A327A6AE5800C27A6A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +119,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				556E21C8282915CA000C28AF /* SDWebImage in Frameworks */,
 				557D91962797280500C27A6A /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -103,6 +137,18 @@
 			path = Factory;
 			sourceTree = "<group>";
 		};
+		556F9A83281B075C00D58D90 /* NewsDescriptions */ = {
+			isa = PBXGroup;
+			children = (
+				556F9A84281B078C00D58D90 /* NewsDescriptionsAssembly.swift */,
+				556F9A86281B07C900D58D90 /* NewsDescriptionsViewController.swift */,
+				556F9A88281B080200D58D90 /* NewsDescriptionsViewModel.swift */,
+				556F9A8A281B080C00D58D90 /* NewsDescriptionsRouter.swift */,
+				556F9A8C281B083A00D58D90 /* NewsDescriptionsContainerView.swift */,
+			);
+			path = NewsDescriptions;
+			sourceTree = "<group>";
+		};
 		557D919727A6A83C00C27A6A /* News */ = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +159,7 @@
 				556F99542808865F00D58D90 /* NewsContainerView.swift */,
 				556F99562808866D00D58D90 /* NewsDataSource.swift */,
 				556F995828088D3D00D58D90 /* NewsCell.swift */,
+				556F9A83281B075C00D58D90 /* NewsDescriptions */,
 			);
 			path = News;
 			sourceTree = "<group>";
@@ -144,8 +191,14 @@
 		557D919A27A6A86300C27A6A /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				557D91A327A6AE5800C27A6A /* ProfileViewController.swift */,
 				557D91D427A957FB00C27A6A /* ProfileAssembly.swift */,
+				557D91A327A6AE5800C27A6A /* ProfileViewController.swift */,
+				556E21CF282A5D79000C28AF /* ProfileViewModel.swift */,
+				556E21D1282A5D93000C28AF /* ProfileRouter.swift */,
+				556E21D3282A5DAD000C28AF /* ProfileContainerView.swift */,
+				556E21D7282AFC3F000C28AF /* ProfileDataSource.swift */,
+				556E21D5282A5DBF000C28AF /* ProfileIconCell.swift */,
+				556E2200282D7763000C28AF /* ProfileOtherCell.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -184,12 +237,17 @@
 				557D919A27A6A86300C27A6A /* Profile */,
 				559AA5162790850200967DA5 /* AppDelegate.swift */,
 				556F9A0C2811D62E00D58D90 /* News.swift */,
+				556E21CD2829CD61000C28AF /* Weather.swift */,
+				557BE92328340A8900B545C8 /* Profile.swift */,
 				556F998D280DE6A100D58D90 /* BaseAssembly.swift */,
 				559AA5182790850200967DA5 /* SceneDelegate.swift */,
 				559AA51A2790850200967DA5 /* ViewController.swift */,
 				55F9D49427DA578900A70811 /* UIView+Extension.swift */,
+				556E21C928291741000C28AF /* String+Extension.swift */,
+				556E21CB282917A9000C28AF /* Date+Extension.swift */,
 				559AA51C2790850200967DA5 /* Main.storyboard */,
 				559AA51F2790850400967DA5 /* Assets.xcassets */,
+				557BE921283409D300B545C8 /* Profile.json */,
 				559AA5212790850400967DA5 /* LaunchScreen.storyboard */,
 				559AA5242790850400967DA5 /* Info.plist */,
 				557D91A727A7C38A00C27A6A /* Fonts */,
@@ -216,6 +274,7 @@
 			name = Helper;
 			packageProductDependencies = (
 				557D91952797280500C27A6A /* SnapKit */,
+				556E21C7282915CA000C28AF /* SDWebImage */,
 			);
 			productName = Helper;
 			productReference = 559AA5132790850200967DA5 /* Helper.app */;
@@ -247,6 +306,7 @@
 			mainGroup = 559AA50A2790850100967DA5;
 			packageReferences = (
 				557D91942797280500C27A6A /* XCRemoteSwiftPackageReference "SnapKit" */,
+				556E21C6282915CA000C28AF /* XCRemoteSwiftPackageReference "SDWebImage" */,
 			);
 			productRefGroup = 559AA5142790850200967DA5 /* Products */;
 			projectDirPath = "";
@@ -266,6 +326,7 @@
 				559AA5202790850400967DA5 /* Assets.xcassets in Resources */,
 				559AA51E2790850200967DA5 /* Main.storyboard in Resources */,
 				557D91A927A7C39F00C27A6A /* abosanova.ttf in Resources */,
+				557BE922283409D300B545C8 /* Profile.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,33 +339,48 @@
 			files = (
 				556F9A0D2811D62E00D58D90 /* News.swift in Sources */,
 				559AA51B2790850200967DA5 /* ViewController.swift in Sources */,
+				556E21CA28291741000C28AF /* String+Extension.swift in Sources */,
 				557D91A027A6ACC000C27A6A /* WeatherViewController.swift in Sources */,
+				556E21D4282A5DAD000C28AF /* ProfileContainerView.swift in Sources */,
 				557D91D327A92A2800C27A6A /* MapAssembly.swift in Sources */,
 				55C119AE27D6994C00AC4C53 /* WeatherContainerView.swift in Sources */,
 				557D91AD27A85CBF00C27A6A /* WeatherAssembly.swift in Sources */,
+				556F9A8D281B083A00D58D90 /* NewsDescriptionsContainerView.swift in Sources */,
 				556F9988280DE3B900D58D90 /* NetworkService.swift in Sources */,
+				556E21D8282AFC3F000C28AF /* ProfileDataSource.swift in Sources */,
 				55F9D49727DA5C6C00A70811 /* WeatherRouter.swift in Sources */,
 				55C119A827D5FCA600AC4C53 /* MapContainerView.swift in Sources */,
+				556F9A8B281B080C00D58D90 /* NewsDescriptionsRouter.swift in Sources */,
+				556F9A87281B07C900D58D90 /* NewsDescriptionsViewController.swift in Sources */,
 				556F99532808864900D58D90 /* NewsRouter.swift in Sources */,
 				556F99512808862C00D58D90 /* NewsViewModel.swift in Sources */,
 				557D91AB27A84E4C00C27A6A /* NewsAssembly.swift in Sources */,
 				559AA5172790850200967DA5 /* AppDelegate.swift in Sources */,
+				556E21CC282917A9000C28AF /* Date+Extension.swift in Sources */,
 				556F998E280DE6A100D58D90 /* BaseAssembly.swift in Sources */,
 				55F9D49527DA578A00A70811 /* UIView+Extension.swift in Sources */,
+				556E21D0282A5D79000C28AF /* ProfileViewModel.swift in Sources */,
 				557D91A427A6AE5800C27A6A /* ProfileViewController.swift in Sources */,
 				559AA5192790850200967DA5 /* SceneDelegate.swift in Sources */,
 				557D919C27A6A8BF00C27A6A /* NewsViewController.swift in Sources */,
 				557D91D527A957FB00C27A6A /* ProfileAssembly.swift in Sources */,
+				556E21CE2829CD61000C28AF /* Weather.swift in Sources */,
 				556F998C280DE52F00D58D90 /* ServiceFactory.swift in Sources */,
+				556E21D2282A5D93000C28AF /* ProfileRouter.swift in Sources */,
 				55C119AC27D6099300AC4C53 /* MapViewModel.swift in Sources */,
 				55F9D49927DA5CCC00A70811 /* WeatherViewModel.swift in Sources */,
 				55C119AA27D6093D00AC4C53 /* MapRouter.swift in Sources */,
 				557D91A627A6B1F400C27A6A /* MapViewController.swift in Sources */,
 				556F99572808866D00D58D90 /* NewsDataSource.swift in Sources */,
+				556E21D6282A5DBF000C28AF /* ProfileIconCell.swift in Sources */,
+				556F9A89281B080200D58D90 /* NewsDescriptionsViewModel.swift in Sources */,
+				556E2201282D7763000C28AF /* ProfileOtherCell.swift in Sources */,
 				556F998A280DE47F00D58D90 /* UserDefaultService.swift in Sources */,
 				557D91D727B1843000C27A6A /* Constants.swift in Sources */,
 				556F995928088D3D00D58D90 /* NewsCell.swift in Sources */,
+				557BE92428340A8900B545C8 /* Profile.swift in Sources */,
 				556F99552808865F00D58D90 /* NewsContainerView.swift in Sources */,
+				556F9A85281B078C00D58D90 /* NewsDescriptionsAssembly.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -532,6 +608,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		556E21C6282915CA000C28AF /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		557D91942797280500C27A6A /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit";
@@ -543,6 +627,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		556E21C7282915CA000C28AF /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 556E21C6282915CA000C28AF /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
 		557D91952797280500C27A6A /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 557D91942797280500C27A6A /* XCRemoteSwiftPackageReference "SnapKit" */;
