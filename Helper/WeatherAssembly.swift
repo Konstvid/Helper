@@ -7,7 +7,7 @@
 
 import Foundation
 
-class WeatherAssembly {
+class WeatherAssembly: BaseAssembly {
     
     func build() -> WeatherVIewController {
         let vc = WeatherVIewController()

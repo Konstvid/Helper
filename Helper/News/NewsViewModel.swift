@@ -8,14 +8,29 @@
 import Foundation
 
 protocol NewsViewModelProtocol {
-    
+    func getNews(completion: @escaping ([News]) -> ())
 }
 
 class NewsViewModel: NewsViewModelProtocol {
     
     let router: NewsRouterProtocol
+    let network: NetworkServiceProtocol
     
-    init(router: NewsRouterProtocol) {
+    init(router: NewsRouterProtocol, network: NetworkServiceProtocol) {
         self.router = router
+        self.network = network
+    }
+ 
+    func getNews(completion: @escaping ([News]) -> ()) {
+        network.getNews { result in
+            switch result {
+            case .success(let news):
+                completion(news)
+            case .failure(let error):
+                print(error)
+            }
+        }
     }
 }
+
+

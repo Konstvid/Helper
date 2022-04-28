@@ -8,7 +8,7 @@
 import UIKit
 
 class NewsCell: UITableViewCell {
-    
+     
     private let editionNewsLabel = UILabel()
     private let dateNewsLabel = UILabel()
     private let titleNewsLabel = UILabel()
@@ -25,16 +25,12 @@ class NewsCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func setUp(whereLabel: String,
-               dataLabel: String,
-               topLabel: String,
-               newsLabel: String,
-               authorLabel: String) {
-        editionNewsLabel.text = whereLabel
-        dateNewsLabel.text = dataLabel
-        titleNewsLabel.text = topLabel
-        descriptionNewsLabel.text = newsLabel
-        authorNewsLabel.text = authorLabel
+    func setUp(news: News) {
+        editionNewsLabel.text = news.source
+        dateNewsLabel.text = news.publishedAt?.converted()
+        titleNewsLabel.text = news.title
+        descriptionNewsLabel.text = news.description
+        authorNewsLabel.text = news.author
     }
     
     func configureUI() {
@@ -50,9 +46,11 @@ class NewsCell: UITableViewCell {
         titleNewsLabel.font = UIFont(name: "ABosaNova", size: 20)
         titleNewsLabel.font = .boldSystemFont(ofSize: 20)
         titleNewsLabel.textAlignment = .left
+        titleNewsLabel.numberOfLines = 2
         
         descriptionNewsLabel.font = UIFont(name: "ABosaNova", size: 20)
         descriptionNewsLabel.textAlignment = .left
+        descriptionNewsLabel.numberOfLines = 3
         
         authorNewsLabel.font = UIFont(name: "ABosaNova", size: 10)
         authorNewsLabel.textAlignment = .left
@@ -64,7 +62,6 @@ class NewsCell: UITableViewCell {
             descriptionNewsLabel,
             authorNewsLabel
         ].forEach {
-            $0.numberOfLines = 0
             contentView.addSubview($0)
         }
     }
@@ -93,9 +90,8 @@ class NewsCell: UITableViewCell {
         }
         
         authorNewsLabel.snp.makeConstraints {
-            $0.top.equalTo(descriptionNewsLabel.snp.bottom).offset(30)
+            $0.bottom.trailing.equalTo(-20)
             $0.leading.equalTo(20)
-            $0.trailing.equalTo(-20)
         }
     }
     

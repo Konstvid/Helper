@@ -7,7 +7,7 @@
 
 import Foundation
 
-class ProfileAssembly {
+class ProfileAssembly: BaseAssembly {
     
     func build() -> ProfileViewController {
         let vc = ProfileViewController()
