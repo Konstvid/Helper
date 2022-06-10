@@ -7,12 +7,15 @@
 
 import Foundation
 
+protocol WeatherViewModelProtocol {
+    
+}
 
-class WeatherViewModel {
+class WeatherViewModel: WeatherViewModelProtocol {
     
-    private let weatherRouter: WeatherRouter
+    private let weatherRouter: WeatherRouterProtocol
     
-    init(weatherRouter: WeatherRouter) {
+    init(weatherRouter: WeatherRouterProtocol) {
         self.weatherRouter = weatherRouter
     }
 }

@@ -10,7 +10,10 @@ import Foundation
 class ProfileAssembly: BaseAssembly {
     
     func build() -> ProfileViewController {
-        let vc = ProfileViewController()
+        let router = ProfileRouter()
+        let viewModel = ProfileViewModel(profileRouter: router)
+        let vc = ProfileViewController(viewModel: viewModel)
+        router.moduleController = vc
         return vc
     }
 }

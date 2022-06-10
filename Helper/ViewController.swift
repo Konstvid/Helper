@@ -17,10 +17,6 @@ class ViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         makeTabBarControllers()
-        makeNewsViewController()
-        makeMapViewController()
-        makeWeatherViewController()
-        makeProfileViewController()
     }
     
     private func makeNewsViewController() -> UINavigationController? {
@@ -48,7 +44,7 @@ class ViewController: UITabBarController {
         let profileItem = UITabBarItem(title: Constants.weather, image: UIImage(systemName: "sun.max"), selectedImage: nil)
         weatherNavigationController?.tabBarItem = profileItem
         weatherNavigationController?.navigationBar.prefersLargeTitles = true
-        weatherNavigationController?.navigationBar.topItem?.title = "Weather"
+        weatherNavigationController?.navigationBar.topItem?.title = Constants.weather
         return weatherNavigationController
     }
     
@@ -58,7 +54,7 @@ class ViewController: UITabBarController {
         let profileItem = UITabBarItem(title: Constants.profile, image: UIImage(systemName: "person"), selectedImage: nil)
         profileNavigationController?.tabBarItem = profileItem
         profileNavigationController?.navigationBar.prefersLargeTitles = true
-        profileNavigationController?.navigationBar.topItem?.title = "Profile"
+        profileNavigationController?.navigationBar.topItem?.title = Constants.profile
         return profileNavigationController
     }
     
@@ -82,6 +78,5 @@ class ViewController: UITabBarController {
         }
         UITabBar.appearance().backgroundColor = .lightGray
         viewControllers = array
-        
     }
 }

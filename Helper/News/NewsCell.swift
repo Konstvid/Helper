@@ -27,7 +27,7 @@ class NewsCell: UITableViewCell {
     
     func setUp(news: News) {
         editionNewsLabel.text = news.source
-        dateNewsLabel.text = news.publishedAt?.converted()
+        dateNewsLabel.text = news.publishedAt?.monthDayYear
         titleNewsLabel.text = news.title
         descriptionNewsLabel.text = news.description
         authorNewsLabel.text = news.author
@@ -37,13 +37,12 @@ class NewsCell: UITableViewCell {
         
         selectionStyle = .none
         
-        editionNewsLabel.font = UIFont(name: "ABosaNova", size: 10)
+        editionNewsLabel.font = UIFont(name: "ABosaNova", size: 18)
         editionNewsLabel.textAlignment = .left
         
-        dateNewsLabel.font = UIFont(name: "ABosaNova", size: 10)
+        dateNewsLabel.font = UIFont(name: "ABosaNova", size: 18)
         dateNewsLabel.textAlignment = .right
         
-        titleNewsLabel.font = UIFont(name: "ABosaNova", size: 20)
         titleNewsLabel.font = .boldSystemFont(ofSize: 20)
         titleNewsLabel.textAlignment = .left
         titleNewsLabel.numberOfLines = 2
@@ -52,7 +51,7 @@ class NewsCell: UITableViewCell {
         descriptionNewsLabel.textAlignment = .left
         descriptionNewsLabel.numberOfLines = 3
         
-        authorNewsLabel.font = UIFont(name: "ABosaNova", size: 10)
+        authorNewsLabel.font = UIFont(name: "ABosaNova", size: 18)
         authorNewsLabel.textAlignment = .left
         
         [

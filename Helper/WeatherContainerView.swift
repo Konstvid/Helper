@@ -25,22 +25,31 @@ class WeatherContainerView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
+    func setUp(weather: Weather) {
+        if let city = weather.city {
+            cityLabel.text = city
+        }
+        temperatureLabel.text = weather.temperature
+        cycloneLabel.text = weather.cyclone
+        sunRiseLabel.text = weather.sunrise
+        sunSetLabel.text = weather.sunset
+    }
+    
     private func configureUI() {
-        
         cityLabel.text = Constants.cityTitle
-        cityLabel.font = UIFont(name: "ABosaNova", size: 50)
+        cityLabel.font = UIFont(name: "ABosaNova", size: 20)
         cityLabel.textColor = .black
         cityLabel.textAlignment = .center
         cityLabel.numberOfLines = 0
         
         temperatureLabel.text = Constants.temperatureTitle
-        temperatureLabel.font = UIFont(name: "ABosaNova", size: 30)
+        temperatureLabel.font = UIFont(name: "ABosaNova", size: 20)
         temperatureLabel.textColor = .black
         temperatureLabel.textAlignment = .center
         temperatureLabel.numberOfLines = 0
         
         cycloneLabel.text = Constants.cycloneTitle
-        cycloneLabel.font = UIFont(name: "ABosaNova", size: 25)
+        cycloneLabel.font = UIFont(name: "ABosaNova", size: 20)
         cycloneLabel.textColor = .black
         cycloneLabel.textAlignment = .center
         cycloneLabel.numberOfLines = 0
@@ -58,17 +67,11 @@ class WeatherContainerView: UIView {
         sunSetLabel.numberOfLines = 0
         
         backgroundColor = .white
-        addSubViews(
-            [cityLabel,
-            temperatureLabel,
-            cycloneLabel,
-            sunSetLabel,
-            sunRiseLabel]
-        )
+        let views = [cityLabel, temperatureLabel, cycloneLabel, sunSetLabel, sunRiseLabel]
+        addSubViews(views)
     }
     
     private func configureLayout() {
-     
         cityLabel.snp.makeConstraints {
             $0.top.equalTo(200)
             $0.leading.equalTo(20)
